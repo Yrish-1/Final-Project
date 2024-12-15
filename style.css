@@ -1,0 +1,558 @@
+body{
+    background-image: url(pic/BackgroundforHP.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    ;
+}
+.mamaw{
+    margin: 0%;
+    padding: 0%;
+    font-size: 60px;
+    height: 500px;
+    width: 100%;
+    color: rgb(197, 69, 182);
+    line-height: 500px;
+    text-align: center;
+    
+}
+.mamaw span{
+    color:rgb(203, 76, 194);
+
+}
+.B1button{
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(224, 145, 222);
+}
+.Navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+}
+.Navigation a {
+    display: inline-block;
+    font-size: 25px;
+    color: palevioletred;
+    text-decoration: dotted;
+    font-style: 500;
+    margin-left: 30px;
+    transition: .3s;
+}
+.Navigation a:hover{
+    color: rgb(183, 19, 55);      
+}
+#PersonalInformation {
+    position: relative;
+    width: 80%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(pic/PersonalInfo220.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.PersonalInformation-content {
+    max-width: 600px;
+}
+.PersonalInformation-content h1 {
+
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+.PersonalInformation-content h3 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: #000;
+}
+.PersonalInformation-content p {
+    font-size: 20px;
+    color: #000
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #000;
+    color: #eee;
+    margin: 0;
+    font-size: 16px; /* Increased for better readability */
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+header {
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+header a {
+    margin-right: 40px;
+}
+
+/* Carousel */
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -50px;
+    position: relative;
+}
+.carousel .List .Item {
+    position : absolute;
+   inset: 0 ;
+}
+
+.carousel .List .Item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.carousel .List .Item .content {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 1130px;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: rgb(28, 26, 27);
+    text-shadow: 0 5px 10px #0004;
+}
+
+.carousel .List .Item .content .author {
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.carousel .List .Item .content .title,
+.carousel .List .Item .content .topic {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.3em;
+}
+
+.carousel .List .Item .content .title {
+    background-color: plum;
+    color: #000;
+}
+
+.carousel .List .Item .content .description {
+    background-color: plum;
+}
+
+.carousel .List .Item .content .topic {
+    color: rgb(49, 5, 17);
+    background-color: #e7b4b4;
+}
+
+.carousel .List .Item .content .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;    
+}
+
+.carousel .List .Item .content .button {
+    border: none;
+   background-color: #eee;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.carousel .List .Item .content .button:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    border: 1px solid #eee;
+}
+
+/* Thumbnail */
+.thumbnail {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+    color: #000;
+}
+
+.thumbnail .Item {
+    width: 100px; 
+    height: 150px; 
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 20px; 
+    transition: transform 0.3s ease; 
+}
+
+
+.thumbnail .Item:hover {
+    transform: scale(1.1); 
+    z-index: 10; 
+}
+
+.thumbnail .Item .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail .Item .content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;    
+}
+
+.thumbnail .Item .content .title {
+    font-weight: bold; 
+}
+
+/* Arrows */
+.arrows {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex; 
+    gap: 10px;
+    align-items: center;   
+}
+
+.arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius:     50%;
+    background-color: #eee4;
+    border: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s; 
+    z-index: 100;  
+}
+
+.arrows button:hover {
+    background-color: #eee;
+    color: #555;
+}
+
+/* Animation for carousel items */
+.carousel .List .Item:nth-child(1) {
+    z-index: 1;
+}
+
+.carousel .List .Item:nth-child(1) .author,
+.carousel .List .Item:nth-child(1) .title,
+.carousel .List .Item:nth-child(1) .topic,
+.carousel .List .Item:nth-child(1) .description,
+.carousel .List .Item:nth-child(1) .buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;    
+}
+
+@keyframes showContent {
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0); 
+    }
+}
+
+.carousel .List .Item:nth-child(1) .title {
+    animation-delay: 1.2s;    
+}
+
+.carousel .List .Item:nth-child(1) .topic {
+    animation-delay: 1.4s;
+}
+
+.carousel .List .Item:nth-child(1) .description {
+    animation-delay: 1.6s;
+}
+
+.carousel .List .Item:nth-child(1) .buttons {
+    animation-delay: 1.8s;
+}
+
+/* Effect for next click */
+.carousel.next .List .Item:nth-child(1) img {
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 20px;
+    animation: showImage 0.5s linear 1 forwards;   
+}
+
+@keyframes showImage {
+    to {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0; 
+    }
+}
+
+.carousel.next .thumbnail .Item:nth-last-child(1) {
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+@keyframes showThumbnail {
+    to {
+        width: 150px;       
+    }
+}
+
+.carousel.next .thumbnail {
+    transform: translateX(150px);
+    animation: transformThumbnail .5s linear 1 forwards;
+}
+
+@keyframes transformThumbnail {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Effect for previous click */
+.carousel.previous .List .Item:nth-child(2) {
+    z-index: 2;
+}
+
+.carousel.previous .List .Item:nth-child(2) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: alternate outImage 0.5s linear 1 forwards;
+}
+
+@keyframes outImage {
+    to {
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }   
+}
+
+.carousel.previous .thumbnail .Item:nth-child(1) {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.carousel.previous .List .Item:nth-child(2) .author,
+.carousel.previous .List .Item:nth-child(2) .title,
+.carousel.previous .List .Item:nth-child(2) .topic,
+.carousel.previous .List .Item:nth-child(2) .description,
+.carousel.previous .List .Item:nth-child(2) .buttons {
+    animation: contentOut 1.5s linear 1 forwards;
+}
+
+@keyframes contentOut {
+    to {
+        transform: translateY(-150px); 
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.carousel.next .arrows button,
+.carousel.previous .arrows button {
+    pointer-events: none;
+}
+
+/* Time indicator */
+.time {
+    width: 0px;
+    height: 4px;
+    background-color: #eee;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.carousel.next .time,
+.carousel.previous .time {
+    width: 100%;
+    animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning {
+    to {
+        width: 0;
+    }
+}
+.skills-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    height: 100vh;
+    margin: 0; 
+    color: #000;
+}
+.card {
+    text-align: justify; 
+    max-width: 300px; 
+    height: 80%;
+    background: #f282c5; 
+    border-radius: 20px; 
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2); 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+}
+.skills-images {
+    width: 100%; 
+    height: auto; 
+    max-height: 200px;
+    border-radius: 6px; 
+}
+.video-container {
+    position: relative; 
+    width: 100%; /* Full width */
+    height: auto; 
+    margin: 0 auto;
+}
+.responsive-video {
+    width: 100%; /* Full width */
+    height: auto; 
+    max-height: 100vh; 
+    object-fit: cover; 
+}
+.overlay-content {
+    position: absolute; 
+    top: 50%; 
+    left: 240px; /* Position it slightly from the left */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    color: black; /* Text color */
+    padding: 20px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners */
+    z-index: 1; /* Ensure it is above the video */
+    width: 600px; /* Set a width for the overlay */
+    margin: 0 auto;
+    text-align: justify;
+    word-spacing: 0.2em;
+}
+.overlay-content h1 {
+    font-family: 'Lobster', cursive; 
+    font-size: 36px; 
+    color: #c31445; 
+    text-align: center; /* Center the header */
+    margin-bottom: 10px; /* Space below the header */
+    text-align: justify;
+}
+
+.overlay-content p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px; 
+    color:rgb(11, 12, 12); 
+    line-height: 1.5; /* Improve readability */
+}
+
+/* General styles for the container */
+.container {
+    display: flex; /* Use flexbox para sa layout */
+    justify-content: center; /* need i-center horizontally */
+    align-items: center; /*  vertically naman */
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    height: 100vh; 
+}
+
+.contactInfo {
+    flex: 1; 
+    margin-right: 20px; /* Add some space between the sections */
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.contactForm {
+    flex: 1;
+    max-width: 400px; 
+    margin-left: 20px; /* Adsdwd space to the left of the form */
+    text-align: center; /* Center text within this section */
+}
+
+.inputBox {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+.inputBox input,
+.inputBox textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #030303; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.inputBox span {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+input[type="submit"] {
+    background-color: #e088bd; 
+    color: rgb(7, 7, 7); 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+input[type="submit"]:hover {
+    background-color: #bb7087; 
+}
+#Contacts{
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+}
+.container .contactInfo{
+    margin-top: 10px;
+}
